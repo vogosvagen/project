@@ -119,30 +119,31 @@ int main(){
 	switch (ch){
 	case 1:																/* case 1 : profile add */
 
-	cout<<"add a profile...\n";
+		cout<<"add a profile...\n";
 
-	customeradd(e,n);
-	sort(e,n);
-	cout<<"___________________________________________\n";
-	for (int i=0;i<n;i++){
+		customeradd(e,n);
+		sort(e,n);
+		cout<<"___________________________________________\n";
+		for (int i=0;i<n;i++){
 		p2class(e,i);
-	}
-
+		}
 	
-	break;											
+	
+		break;											
 	case 2:																/* case 2 : profile delete */
-	cout<<"which ID to delete? ";
-	int id;
-	cin>>id;
+		cout<<"which ID to delete? ";
+		int id;
+		cin>>id;
 
-	delecust(e,n,id);
-	sort(e,n);
-	cout<<"___________________________________________\n";
-	for (int i=0;i<n;i++){
-		p2class(e,i);
-	}
+		delecust(e,n,id);
+		sort(e,n);
+		cout<<"___________________________________________\n";
+	
+		for (int i=0;i<n;i++){
+			p2class(e,i);
+		}
 
-	break;
+		break;
 
 	case 3:																/* case 3 : withdraw */
 		
