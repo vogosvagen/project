@@ -20,7 +20,7 @@ public:customers();
 	   float getage();
 
 
-	   friend void p2class (customers *,int ); /*		secondary function to cout, optional		*/	
+	   friend void p2class (customers *,int ); /*		secondary function to display, optional		*/	
 	   friend int read(customers *); /* working */	
 	   friend void customeradd(customers *,int& ); /* working */	
 	   friend void delecust(customers *,int& , int ); /* working */	
