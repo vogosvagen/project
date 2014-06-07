@@ -10,9 +10,7 @@ int main(){
  	e=new  customers  [n];
  	e=t;
  	sort(e,n);
- 	for  (int  i=0;
-i<n;
-i++){
+ 	for  (int  i=0;i<n;i++){
  	 	p2class(e,i);
  	}
  	cout<<"__________\n";
@@ -27,22 +25,18 @@ i++){
  	 	customeradd(e,n);
  	 	sort(e,n);
  	 	cout<<"___________________________________________\n";
- 	 	for  (int  i=0;
-i<n;
-i++){
+ 	 	for  (int  i=0;i<n;i++){
  	 	p2class(e,i);
  	 	}
  	 	break;
- 	 	 	 	 	 	 	 	 	 	 	 	case  2: 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	/*  case  2  :  profile  delete  */ 
-													cout<<"which  ID  to  delete?  ";
+	case  2: 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	/*  case  2  :  profile  delete  */ 
+		cout<<"which  ID  to  delete?  ";
  	 	int  id;
  	 	cin>>id;
  	 	delecust(e,n,id);
  	 	sort(e,n);
  	 	cout<<"___________________________________________\n";
- 	 	for  (int  i=0;
-i<n;
-i++){
+ 	 	for  (int  i=0;i<n;i++){
  	 	 	p2class(e,i);
  	 	}
  	 	break;
@@ -53,9 +47,7 @@ i++){
  	 	cin>>withdrawvalue;
  	 	withdraw(e,n,idwithdraw,withdrawvalue);
  	 	cout<<"___________________________________________\n";
- 	 	for  (int  i=0;
-i<n;
-i++){
+ 	 	for  (int  i=0;i<n;i++){
  	 	p2class(e,i);
  	}
  	 	break;
@@ -66,9 +58,7 @@ i++){
  	 	cin>>depositvalue;
  	 	deposit(e,n,iddeposit,depositvalue);
  	 	cout<<"___________________________________________\n";
- 	 	for  (int  i=0;
-i<n;
-i++){
+ 	 	for  (int  i=0;i<n;i++){
  	 	p2class(e,i);
  	}
  	 	break;
@@ -91,9 +81,7 @@ i++){
  	 	save(e,n);
  	 	cout<<"saved...\n";
  	 	break;
- 	case  9: 	 	for  (int  i=0;
-i<n;
-i++){
+ 	case  9: 	 	for  (int  i=0;i<n;i++){
  	 	p2class(e,i);
  	}
  	 	break;
@@ -103,9 +91,7 @@ i++){
  	ch=menu();
  	cout<<"___________________________________________\n";
  	}
- 	for  (int  i=0;
-i<n;
-i++){
+ 	for  (int  i=0;i<n;i++){
  	 	p2class(e,i);
  	}
  	return  0;
