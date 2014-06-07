@@ -52,7 +52,8 @@ int  read(customers  *e){
  	double  balance;
  	ifstream  ifile;
  	ifile.open("test.txt");
- 	if  (!ifile) 	 	cout<<"File  not  found.\n";
+ 	if  (!ifile)
+ 		cout<<"File  not  found.\n";
  	else{
  	 	while(!ifile.eof()){
  	 	 	ifile>>id>>name>>age>>gender>>balance;
@@ -79,38 +80,36 @@ void  customeradd(customers  *e,int&  n){
  	int  id;
  	cin>>id;
  	for(int  i=0;i<n;i++){
- 	 	if(e[i].c_id==id) 	 	 	notfound=true;
+ 	 	if(e[i].c_id==id) 
+ 	 		notfound=true;
  	}
  	if(!notfound){
- 	temp=e;
- 	n=n+1;
- 	e=new  customers  [n];
- 	e=temp;
- 	e[n-1].setid(id);
- 	cout<<"\n";
- 	cout<<"new  name:  ";
- 	char  *a=new  char  [100];
- 	cin>>a;
- 	e[n-1].setname(a);
- 	a=new  char  [100];
- 	cout<<"\n";
- 	cout<<"new  age:  ";
- 	float  age;
- 	cin>>age;
- 	e[n-1].setage(age);
- 	cout<<"\n";
- 	cout<<"new  gender:  ";
- 	char  *gender=new  char  [10];
- 	cin>>gender;
- 	e[n-1].setgender(gender);
- 	gender=new  char  [10];
- 	cout<<"\n";
- 	cout<<"new  balance:  ";
- 	double  balance;
- 	cin>>balance;
- 	e[n-1].setbalance(balance);
+ 		temp=e;
+ 		n=n+1;
+	 	e=new  customers  [n];
+	 	e=temp;
+	 	e[n-1].setid(id);
+	 	cout<<"\nnew  name:  ";
+	 	char  *a=new  char  [100];
+	 	cin>>a;
+	 	e[n-1].setname(a);
+	 	a=new  char  [100];
+	 	cout<<"\nnew  age:  ";
+	 	float  age;
+	 	cin>>age;
+	 	e[n-1].setage(age);
+	 	cout<<"\nnew  gender:  ";
+	 	char  *gender=new  char  [10];
+	 	cin>>gender;
+	 	e[n-1].setgender(gender);
+	 	gender=new  char  [10];
+	 	cout<<"\nnew  balance:  ";
+	 	double  balance;
+	 	cin>>balance;
+	 	e[n-1].setbalance(balance);
  	}
- 	else   	 	cout<<"ID  lready  taken\n";
+ 	else 
+ 		cout<<"ID  lready  taken\n";
 }
 
 void  delecust(customers  *e,int&  n,  int  id){
